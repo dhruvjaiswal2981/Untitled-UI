@@ -1,0 +1,79 @@
+/* .stats-content */
+.stats-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;    
+  height: 100vh;
+  flex-direction: column; 
+}
+
+.stats-image {
+  max-width: 90%;        
+  max-height: 80vh;      
+  border-radius: 8px;    
+  object-fit: cover;     
+}
+
+.stats-card {
+  width: 100%; /* Adjust width to fill available space */
+  max-width: 1440px; /* Add a max-width for large screens */
+  height: auto; /* Allow height to adjust based on content */
+  padding: 4rem 1rem; /* Adjust padding for better spacing */
+  gap: 1rem; /* Add gap between elements */
+  opacity: 1; /* Set opacity to 1 for visibility */
+  color: #FFFFFF;
+}
+
+.stats-description {
+  color: #475467;
+  margin-bottom: 2rem;
+  font-family: Inter;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.logo-com{
+  text-align: center;
+}
+
+.logo-image {
+  width: 182px;
+  height: 48px;
+  margin-right: 20px;
+}
+
+/* Mobile View - Responsive */
+@media screen and (max-width: 768px) {
+  .stats-content {
+      padding: 1rem; /* Add padding to content for mobile */
+      height: auto; /* Allow flexibility in height */
+  }
+
+  .stats-image {
+      max-width: 100%; /* Allow the image to take full width */
+      max-height: 60vh; /* Adjust height to fit better on mobile */
+  }
+
+  .stats-card {
+      width: 100%; /* Ensure the card fills the screen width */
+      padding: 2rem 1rem; /* Adjust padding for mobile */
+      gap: 1rem; /* Keep a gap between elements */
+      opacity: 1; /* Make sure the card is visible */
+  }
+
+  .stats-description {
+      font-size: 16px; /* Adjust font size for smaller screens */
+      line-height: 24px; /* Adjust line height for better readability */
+      margin-bottom: 1.5rem; /* Reduce bottom margin for mobile */
+  }
+
+  .logo-image {
+      width: 150px; /* Resize logo for smaller screens */
+      height: 40px; /* Adjust height for smaller screens */
+      margin-right: 20px; /* Adjust margin for mobile */
+  }
+}

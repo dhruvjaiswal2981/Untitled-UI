@@ -1,0 +1,32 @@
+/* Testimonial Content */
+.testimonial-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Testimonial Title */
+.testimonial-title {
+    margin: 1.5rem 0;
+    color: #101828;
+    font-family: "Inter";
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+    .testimonial-title {
+        font-size: 24px; /* Adjust title size for smaller screens */
+        line-height: 36px; /* Reduce line height to fit better */
+    }
+
+    .testimonial-content {
+        max-width: 90%; /* Allow content to use more space on smaller screens */
+        padding: 0 1rem; /* Add some padding to ensure text doesn't touch the edges */
+    }
+}

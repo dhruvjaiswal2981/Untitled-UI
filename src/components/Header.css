@@ -1,0 +1,71 @@
+/* Header.css */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  padding: 40px 20px;
+  background-color: #fff;
+}
+
+.header-card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav a {
+  margin: 0 1rem;
+  text-decoration: none;
+  color: #475467;
+  font-weight: 500;
+}
+
+.profile-img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* Mobile View Styles */
+@media (max-width: 768px) {
+  .header {
+      flex-direction: column;
+      padding: 20px 10px;
+      margin-left: 10px;
+      margin-right: 10px;
+  }
+
+  .header-card {
+      flex-direction: column;
+      align-items: center;
+      margin-bottom: 10px;
+  }
+
+  .logo {
+      font-size: 1.2rem;
+      margin-bottom: 10px;
+  }
+
+  .nav {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 10px;
+  }
+
+  .nav a {
+      margin: 0.5rem 0;
+  }
+
+  .profile-img {
+      width: 35px;
+      height: 35px;
+  }
+}

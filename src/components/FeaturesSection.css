@@ -1,0 +1,115 @@
+/* Section Layout */
+.features {
+  padding: 4rem 2rem;
+  text-align: center;
+  background-color: #fff;
+}
+
+.features-header {
+  margin-bottom: 2rem;
+}
+
+.features-tagline {
+  color: #7c3aed;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.features-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #111827;
+}
+
+.features-description {
+  font-size: 1rem;
+  color: #6b7280;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+/* Features Grid */
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* 3 columns per row */
+  gap: 2rem;
+  margin-left: 5rem;
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+  background: #f9fafb;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  transform: translateY(-10px);
+}
+
+.feature-icon {
+  width: 60px; /* Adjust image size */
+  height: 60px;
+  object-fit: cover;
+  margin-bottom: 1rem;
+}
+
+.feature-title {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.feature-description {
+  font-size: 1rem;
+  color: #6b7280;
+  text-align: center;
+}
+
+/* Make the grid responsive */
+@media (max-width: 1200px) {
+  .features-grid {
+      grid-template-columns: repeat(2, 1fr); /* 2 columns on medium screens */
+      margin-left: 2rem; /* Reduce margin on smaller screens */
+  }
+}
+
+@media (max-width: 768px) {
+  .features-grid {
+      grid-template-columns: 1fr; /* 1 column on small screens */
+      margin-left: 0; /* Remove left margin for better alignment on mobile */
+  }
+
+  .features-title {
+      font-size: 1.5rem; /* Adjust title size for smaller screens */
+  }
+
+  .features-description {
+      font-size: 0.9rem; /* Reduce description font size for mobile */
+      max-width: 90%; /* Allow description to fill more space on mobile */
+  }
+
+  .feature-card {
+      padding: 1.5rem; /* Reduce padding for smaller screens */
+  }
+
+  .feature-icon {
+      width: 50px; /* Adjust icon size for smaller screens */
+      height: 50px;
+  }
+
+  .feature-title {
+      font-size: 1.125rem; /* Adjust feature title font size for mobile */
+  }
+
+  .feature-description {
+      font-size: 0.9rem; /* Adjust description font size for mobile */
+  }
+}

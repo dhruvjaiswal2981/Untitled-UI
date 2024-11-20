@@ -1,0 +1,120 @@
+/* Features Section */
+.features-section {
+  text-align: center;
+  padding: 4rem 2rem;
+  background-color: #f9f9f9;
+}
+
+.features-header .features-tagline {
+  font-size: 0.875rem;
+  color: #9b51e0;
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 0.05em;
+  margin-bottom: 0.5rem;
+}
+
+.features-header .features-title {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #333333;
+  margin-bottom: 1rem;
+}
+
+.features-header .features-description {
+  font-size: 1rem;
+  color: #828282;
+  margin-bottom: 3rem;
+}
+
+.features-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 3rem;
+}
+
+.features-image img {
+  max-width: 100%;
+}
+
+.features-cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.feature-card {
+  background-color: #ffffff;
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  padding: 1.5rem;
+  max-width: 320px;
+  text-align: left;
+  box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+.feature-card .icon-wrapper {
+  background-color: #f3f3f3;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.feature-card h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #333333;
+  margin-bottom: 0.5rem;
+}
+
+.feature-card p {
+  font-size: 0.875rem;
+  color: #828282;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card .learn-more {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #9b51e0;
+  text-decoration: none;
+}
+
+.feature-card .learn-more:hover {
+  text-decoration: underline;
+}
+
+/* Mobile View Adjustments */
+@media (max-width: 768px) {
+  .features-header .features-title {
+      font-size: 1.5rem; /* Adjust title size for smaller screens */
+  }
+
+  .features-header .features-description {
+      font-size: 0.875rem; /* Adjust description font size for smaller screens */
+  }
+
+  .features-cards {
+      flex-direction: column; /* Stack feature cards vertically on smaller screens */
+      align-items: center; /* Center feature cards */
+      gap: 1.5rem; /* Add some space between cards */
+  }
+
+  .feature-card {
+      max-width: 90%; /* Allow feature cards to take more width on small screens */
+  }
+
+  .feature-card h3 {
+      font-size: 1.125rem; /* Slightly smaller heading size for mobile */
+  }
+
+  .feature-card p {
+      font-size: 0.875rem; /* Adjust paragraph font size for mobile */
+  }
+}

@@ -1,0 +1,119 @@
+/* HeroSection.css */
+.hero {
+  text-align: center;
+  padding-top: 7rem;
+  height: 400px;
+  background-color: #f9f9f9;
+  margin: 0;
+  background-size: cover;
+}
+
+.hero-content {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.team-dash {
+  width: 400px;
+  height: 32px; /* Adjusted height */
+  margin-left: 100px;
+  padding: 4px 10px 4px 4px;
+  border-radius: 30px;
+  border: 1px solid #E9D7FE;
+}
+
+.badge {
+  color: #6941C6;
+  padding: 0.5rem 1rem;
+  border: 1px solid #D6BBFB;
+  border-radius: 16px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.link {
+  color: #6941C6;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 8px;
+}
+
+.hero-title {
+  margin: 1.5rem 0;
+  color: #101828;
+  font-family: "Inter";
+  font-size: 40px;
+  font-weight: 600;
+  line-height: 72px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.hero-description {
+  color: #475467;
+  margin-bottom: 2rem;
+  font-family: Inter;
+  font-size: 19px;
+  font-weight: 400;
+  line-height: 30px;
+  text-align: center;
+  text-underline-position: from-font;
+  text-decoration-skip-ink: none;
+}
+
+.hero-actions .btn {
+  padding: 0.75rem 1.5rem;
+  border-radius: 5px;
+  margin: 0 0.5rem;
+  font-size: 1rem;
+}
+
+.demo-btn {
+  background-color: #f3f4f6;
+  color: #333;
+  border: 1px solid #D0D5DD;
+}
+
+.signup-btn {
+  background-color: #4f46e5;
+  color: #fff;
+  border: none;
+}
+
+/* Mobile View - Responsive */
+@media screen and (max-width: 768px) {
+  .hero {
+      padding-top: 4rem;
+      height: auto; /* Allow flexibility in height */
+  }
+
+  .hero-title {
+      font-size: 28px; /* Smaller font size */
+      line-height: 1.4; /* Adjust line height */
+  }
+
+  .hero-description {
+      font-size: 16px; /* Adjust description font size */
+      margin-bottom: 1rem; /* Adjust margin */
+  }
+
+  .hero-actions .btn {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem; /* Adjust padding for smaller screens */
+  }
+
+  .team-dash {
+      width: 100%; /* Full width for mobile */
+      margin-left: 0; /* Remove margin */
+      margin-bottom: 1rem; /* Add bottom margin */
+      padding: 8px 10px; /* Adjust padding */
+      text-align: center; /* Center text */
+  }
+
+  .link {
+      font-size: 0.9rem; /* Slightly smaller font for mobile */
+  }
+}
